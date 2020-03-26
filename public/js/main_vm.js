@@ -27,8 +27,7 @@ const vm = new Vue({
         message: "",
         nickname: "",
         messages: [],
-        notLoggedIn: true,
-        showButton: false
+        notLoggedIn: true
     },
 
     mounted: function(){
@@ -61,6 +60,7 @@ const vm = new Vue({
                 
             }else{
                 console.log("add username"); 
+                this.errorLogin = true;
             }
         }
     },

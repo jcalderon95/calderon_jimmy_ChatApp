@@ -1,12 +1,83 @@
-#logCon{
+#loginCon{
 
     position: absolute;
     position: fixed;
-    text-align: center;
+    // text-align: center;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(211, 206, 206);
+    background: rgb(47,55,94);
+    background: -moz-linear-gradient(0deg, rgba(47,55,94,1) 0%, rgba(79,93,160,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(47,55,94,1) 0%, rgba(79,93,160,1) 100%);
+    background: linear-gradient(0deg, rgba(47,55,94,1) 0%, rgba(79,93,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f375e",endColorstr="#4f5da0",GradientType=1);
+
+    #loginForm{
+        width: 400px;
+        height: 400px;
+        background-color: #16162d;
+        margin: 0 auto;
+        margin-top: 80px;
+        border-radius: 25px;
+        padding-top: 90px;
+        // box-shadow: 10px 5px 5px red;
+        box-shadow: 0px 15px 15px 0.5px rgba(0, 0, 0, 0.2);
+
+        #loginTitle{
+            color: #FFFFFF;
+            font-family: 'Raleway', sans-serif;
+            display: block;
+            text-align: center;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        #nickname{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+            background-color: #1C213A;
+            border: none;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+            color: #A4A6B1;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        #loginSubmit{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: #102C7F;
+            border: none;
+            border-radius: 10px;
+            color: #F4F7FC;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            width: 80px;
+            height: 40px;
+            transition: .2s ease-in;
+
+            &:hover{
+                 transform: scale(1.05);
+                 color: rgb(255, 255, 255);
+            }
+        }
+
+        #errorLogin{
+            color: rgb(218, 65, 65);
+            text-align: center;
+            margin-top: 10px;
+            font-weight: normal;
+            font-family: 'Raleway', sans-serif;
+            // margin-top: 8px;
+        }
+    }
+
 }
 
 // .hideLogIn{

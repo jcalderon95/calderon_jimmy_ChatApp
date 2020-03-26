@@ -4,17 +4,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
 	<main id="app">
-		<div id="logCon" v-show="notLoggedIn">
-			<label for="nickname">Your Nickname (optional)</label>
-			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
-			<input @click.prevent="logIn" type="submit">
-		</div>
+		<section id="loginCon" v-show="notLoggedIn">
+			<form id="loginForm">
+				<label for="nickname" id="loginTitle">Your Nickname</label>
+				<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="Name/Nickname">
+				<input @click.prevent="logIn" id="loginSubmit" type="submit" value="Go!">
+			</form>
+		</section>	
 
 		<section class="form-container">
 			<form>
