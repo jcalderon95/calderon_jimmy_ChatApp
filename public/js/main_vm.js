@@ -26,7 +26,9 @@ const vm = new Vue({
         socketID: "",
         message: "",
         nickname: "",
-        messages: []
+        messages: [],
+        notLoggedIn: true,
+        showButton: false
     },
 
     mounted: function(){
@@ -48,6 +50,18 @@ const vm = new Vue({
             })
 
             this.message = "";
+        },
+
+        logIn(){
+            console.log(this.nickname);
+
+            if(this.nickname != ""){
+                console.log("logged");
+                this.notLoggedIn = false;
+                
+            }else{
+                console.log("add username"); 
+            }
         }
     },
 
