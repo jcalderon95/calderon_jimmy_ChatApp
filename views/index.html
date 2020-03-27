@@ -18,7 +18,7 @@
 			<form id="loginForm">
 				<label for="nickname" id="loginTitle">Your Nickname</label>
 				<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="Name/Nickname">
-				<h2 v-if="errorLogin" id="errorLogin">Please enter name or nickname</h2>
+				<h2 class="hidden" :class="{ 'errorLogin' : errorLogin }" >Please enter name or nickname</h2>
 				<input @click.prevent="logIn" id="loginSubmit" type="submit" value="Go!">
 			</form>
 		</section>	
