@@ -38,7 +38,7 @@ function leftChat(user){
 }
 
 function userTyping(user){
-    console.log(user.name, 'is typing');
+    // console.log(user.name, 'is typing');
     vm.userTyping = user.name;
 }
 

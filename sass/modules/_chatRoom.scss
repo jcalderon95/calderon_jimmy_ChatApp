@@ -8,14 +8,10 @@
     padding-top: 1px;
 
     .chatRoom{
-        height: 100%;
-        // max-width: 800px;
-        // border-radius: 20px;
+        height: 100vh;
         margin: 0 auto;
-        // margin-top: 5%;
         background-color: #101021;
         box-shadow: 0px 15px 15px 0.5px rgba(0, 0, 0, 0.2);
-        // padding: 0px 0px 0px 0px;
         padding-bottom: 20px;
 
         .statusBar{
@@ -37,8 +33,9 @@
                 font-size: 16px;
                 font-family: 'Raleway', sans-serif;
                 width: 100px;
-                height: 22px;
+                height: 24px;
                 transition: .2s ease-in;
+                font-weight: bold;
                 
     
                 &:hover{
@@ -50,8 +47,7 @@
 
 
         .messages{
-            // background-color: brown;
-            height: 72%;
+            height: 65%;
             margin-top: 15px;
             margin-bottom: 20px;
             margin-left: 20px;
@@ -60,8 +56,6 @@
         }
     
         .form-container{
-            // height: 20%;
-            // background-color: #1C213A;
             border-radius: 20px;
     
             .message{
@@ -114,6 +108,38 @@
 
 }
 
+@media screen and (min-width: 414px){
+
+    #chatCon{
+        .chatRoom{
+
+            .messages{
+                height: 68%;
+            }
+        
+        }
+    
+
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    #chatCon{
+        .chatRoom{
+
+            .messages{
+                height: 75%;
+            }
+        
+        }
+    
+
+    }
+
+}
+
 @media screen and (min-width: 800px){
 
     #chatCon{
@@ -128,16 +154,11 @@
             padding-bottom: 20px;
 
             .messages{
-                // background-color: brown;
-                height: 410px;
+                height: 415px;
                 margin-top: 30px;
                 margin-bottom: 20px;
             }
         
-            // .form-container{
-            //     border-radius: 20px;
-        
-            // }
         }
     
 
