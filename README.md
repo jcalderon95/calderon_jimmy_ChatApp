@@ -4,7 +4,7 @@
  
 Interactive Chat Application using Node.js and Express on the server side and using Vue.js on the client side and using the web socket socket.io to deliver messages and notifications.
 
-<!-- visit the site [jimmycalderon.com](http://jimmycalderon.com/) -->
+Visit the Site [Chat App](https://chat-app-authoring4.herokuapp.com/)
 
 ## Prerequisites
 
