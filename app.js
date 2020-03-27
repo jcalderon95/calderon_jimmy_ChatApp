@@ -32,6 +32,23 @@ io.on('connection', function(socket) { //socket is your connection
         io.emit('new_message', {id: socket.id, message: msg})
     })
 
+    socket.on('joined_chat', function(user) {
+        socket.broadcast.emit('joined_chat', user)
+        console.log(user, 'joined the chat');
+    })
+
+    socket.on('left_chat', function(user) {
+        socket.broadcast.emit('left_chat', user)
+        console.log(user, "left the chat");
+    })
+
+    socket.on('typing', function(user) {
+        socket.broadcast.emit('typing', user)
+        console.log(user, "is typing");
+    })
+
+    
+
     socket.on('disconnect', function(){
         console.log('a user has disconnected');
     })

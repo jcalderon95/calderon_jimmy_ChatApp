@@ -1,7 +1,7 @@
 .new-message { 
-    span { font-size: 0.8rem; display: block; margin-bottom: 2px; }
+    span { font-size: 0.8rem; display: block; margin-bottom: 5px; }
 
-    width: 45%;
+    min-width: 150px;
     padding: 8px 12px;
     background-color: white; 
     border-radius: 8px;
@@ -13,6 +13,6 @@
 
 .my-message {
     float: right !important;
-    background-color: #86bf9d;
+    background-color: #1C213A;
     color: white;
 }

@@ -1,0 +1,146 @@
+#chatCon{
+    height: 100vh;
+    background: rgb(47,55,94);
+    background: -moz-linear-gradient(0deg, rgba(47,55,94,1) 0%, rgba(79,93,160,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(47,55,94,1) 0%, rgba(79,93,160,1) 100%);
+    background: linear-gradient(0deg, rgba(47,55,94,1) 0%, rgba(79,93,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f375e",endColorstr="#4f5da0",GradientType=1);
+    padding-top: 1px;
+
+    .chatRoom{
+        height: 100%;
+        // max-width: 800px;
+        // border-radius: 20px;
+        margin: 0 auto;
+        // margin-top: 5%;
+        background-color: #101021;
+        box-shadow: 0px 15px 15px 0.5px rgba(0, 0, 0, 0.2);
+        // padding: 0px 0px 0px 0px;
+        padding-bottom: 20px;
+
+        .statusBar{
+        background-color: #1C213A;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+        height: 40px;
+        padding-top: 9px;
+
+            .logOutbttn{
+                display: block;
+                margin-left: auto;
+                margin-right: 40px;
+                background-color: #1f3d98;
+                border: none;
+                border-radius: 8px;
+                color: #F4F7FC;
+                font-size: 16px;
+                font-family: 'Raleway', sans-serif;
+                width: 100px;
+                height: 22px;
+                transition: .2s ease-in;
+                
+    
+                &:hover{
+                    background-color: #3553ac;
+                    color:rgb(255, 255, 255);    
+                }
+            }
+        }
+
+
+        .messages{
+            // background-color: brown;
+            height: 72%;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            overflow: scroll;
+        }
+    
+        .form-container{
+            // height: 20%;
+            // background-color: #1C213A;
+            border-radius: 20px;
+    
+            .message{
+                width: 93%;
+                height: 50px;
+                display: block;
+                margin: 0 auto;
+                border: none;
+                border-radius: 8px 8px 0px 0px;
+                background-color: #1C213A;
+                font-family: 'Raleway', sans-serif;
+                color: #A4A6B1;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 7px;
+            }
+    
+            #chatButton{
+                display: block;
+                margin: 0 auto;
+                background-color: #1f3d98;
+                border: none;
+                border-radius: 0px 0px 8px 8px;
+                color: #F4F7FC;
+                font-size: 18px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                width: 93%;
+                height: 40px;
+                transition: .2s ease-in;
+    
+                &:hover{
+                background-color: rgb(41, 70, 157);
+                }
+            }
+    
+            #typing{
+                font-family: 'Raleway', sans-serif;
+                color: #A4A6B1;
+                font-style: italic;
+                font-size: 16px;
+                margin-left: 30px;
+                margin-bottom: 6px;
+                font-weight: lighter;
+            }
+    
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 800px){
+
+    #chatCon{
+        .chatRoom{
+            height: 650px;
+            max-width: 800px;
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-top: 3%;
+            background-color: #101021;
+            box-shadow: 0px 15px 15px 0.5px rgba(0, 0, 0, 0.2);
+            padding-bottom: 20px;
+
+            .messages{
+                // background-color: brown;
+                height: 410px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+        
+            // .form-container{
+            //     border-radius: 20px;
+        
+            // }
+        }
+    
+
+    }
+
+}

@@ -13,7 +13,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f375e",endColorstr="#4f5da0",GradientType=1);
 
     #loginForm{
-        width: 400px;
+        max-width: 500px;
         height: 400px;
         background-color: #16162d;
         margin: 0 auto;
@@ -74,6 +74,7 @@
             margin-top: 10px;
             font-weight: normal;
             font-family: 'Raleway', sans-serif;
+            font-size: 18px;
             // margin-top: 8px;
         }
     }
