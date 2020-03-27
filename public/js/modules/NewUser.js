@@ -15,7 +15,7 @@ export default {
     },
 
     created: function(){
-        setTimeout(() => this.show(), 8000);
+        setTimeout(() => this.show(), 7000);
     },
 
     methods:{

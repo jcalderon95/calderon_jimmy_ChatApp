@@ -68,7 +68,8 @@
             }
         }
 
-        #errorLogin{
+        .errorLogin{
+            display: block;
             color: rgb(218, 65, 65);
             text-align: center;
             margin-top: 10px;

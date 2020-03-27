@@ -73,7 +73,7 @@ const vm = new Vue({
         dispatchMessage() {
 
             if(this.message != "" ){
-                console.log('handle emit message');
+                // console.log('handle emit message');
 
                 // the double pipe || is an "or operator"
                 // if first value is set, use it. else use
@@ -125,7 +125,7 @@ const vm = new Vue({
         },
 
         typing(){
-            console.log('fired typing');
+            // console.log('fired typing');
 
             socket.emit('typing', {
                 name: this.nickname
